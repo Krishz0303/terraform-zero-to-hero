@@ -2,6 +2,7 @@
 
 You can make use of `alias` keyword to implement multi region infrastructure setup in
 terraform.
+alias keyword is only necessary when you need to use multiple configurations of the same provider, such as managing resources in multiple regions. For single-region or single-configuration setups, it is not required.
 
 ```
 provider "aws" {
