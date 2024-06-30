@@ -16,7 +16,7 @@ provider "vault" {
   }
 }
 
-data "vault_kv_secret_v2" "example" {
+data "vault_kv_secret_v2" "example" {  //data keyword to read the information from the external sources
   mount = "secret" // change it according to your mount
   name  = "test-secret" // change it according to your secret
 }
